@@ -1,0 +1,310 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HSE.Salaries</name>
+    </assembly>
+    <members>
+        <member name="T:HSE.Salaries.CompanySize">
+            <summary>
+            Размер компании
+            </summary>
+        </member>
+        <member name="F:HSE.Salaries.CompanySize.S">
+            <summary>
+            Маленькая
+            </summary>
+        </member>
+        <member name="F:HSE.Salaries.CompanySize.M">
+            <summary>
+            Средняя
+            </summary>
+        </member>
+        <member name="F:HSE.Salaries.CompanySize.L">
+            <summary>
+            Крупная
+            </summary>
+        </member>
+        <member name="T:HSE.Salaries.Csv">
+            <summary>
+            Класс для работы с файлом зарплатных данных
+            </summary>
+        </member>
+        <member name="F:HSE.Salaries.Csv.Headings">
+            <summary>
+            Заголовки файла
+            </summary>
+        </member>
+        <member name="M:HSE.Salaries.Csv.Read(System.String)">
+            <summary>
+            Чтение файла зарплатных данных
+            </summary>
+            <param name="filepath"></param>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:HSE.Salaries.Csv.Write(System.String,System.Collections.Generic.List{HSE.Salaries.Employee})">
+            <summary>
+            Сохранение данных по зарплатам в файл
+            </summary>
+            <param name="filepath"></param>
+            <param name="employees"></param>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="T:HSE.Salaries.Dictionaries">
+            <summary>
+            Справочники
+            </summary>
+        </member>
+        <member name="F:HSE.Salaries.Dictionaries.Countries">
+            <summary>
+            List of ISO 3166 country codes
+            Взят с https://raw.githubusercontent.com/lukes/ISO-3166-Countries-with-Regional-Codes/master/all/all.csv
+            Разделители заменены на ; с помощью https://onlinecsvtools.com/change-csv-delimiter
+            </summary>
+        </member>
+        <member name="F:HSE.Salaries.Dictionaries.Currencies">
+            <summary>
+            List of ISO 4217 currency code
+            Взят с https://www.six-group.com/en/products-services/financial-information/data-standards.html
+            Сохранен из XLS в CSV
+            </summary>
+        </member>
+        <member name="T:HSE.Salaries.Employee">
+            <summary>
+            Информация о сотруднике
+            </summary>
+            <param name="Number"></param>
+            <param name="WorkYear"></param>
+            <param name="ExperienceLevel"></param>
+            <param name="EmploymentType"></param>
+            <param name="JobTitle"></param>
+            <param name="Salary"></param>
+            <param name="SalaryCurrency"></param>
+            <param name="SalaryInUsd"></param>
+            <param name="Residence"></param>
+            <param name="RemoteRatio"></param>
+            <param name="CompanyLocation"></param>
+            <param name="CompanySize"></param>
+        </member>
+        <member name="M:HSE.Salaries.Employee.#ctor(System.Int32,System.Int32,HSE.Salaries.ExperienceLevel,HSE.Salaries.EmploymentType,System.String,System.Int32,System.String,System.Int32,System.String,HSE.Salaries.RemoteRatio,System.String,HSE.Salaries.CompanySize)">
+            <summary>
+            Информация о сотруднике
+            </summary>
+            <param name="Number"></param>
+            <param name="WorkYear"></param>
+            <param name="ExperienceLevel"></param>
+            <param name="EmploymentType"></param>
+            <param name="JobTitle"></param>
+            <param name="Salary"></param>
+            <param name="SalaryCurrency"></param>
+            <param name="SalaryInUsd"></param>
+            <param name="Residence"></param>
+            <param name="RemoteRatio"></param>
+            <param name="CompanyLocation"></param>
+            <param name="CompanySize"></param>
+        </member>
+        <member name="P:HSE.Salaries.Employee.Number">
+            <summary></summary>
+        </member>
+        <member name="P:HSE.Salaries.Employee.WorkYear">
+            <summary></summary>
+        </member>
+        <member name="P:HSE.Salaries.Employee.ExperienceLevel">
+            <summary></summary>
+        </member>
+        <member name="P:HSE.Salaries.Employee.EmploymentType">
+            <summary></summary>
+        </member>
+        <member name="P:HSE.Salaries.Employee.JobTitle">
+            <summary></summary>
+        </member>
+        <member name="P:HSE.Salaries.Employee.Salary">
+            <summary></summary>
+        </member>
+        <member name="P:HSE.Salaries.Employee.SalaryCurrency">
+            <summary></summary>
+        </member>
+        <member name="P:HSE.Salaries.Employee.SalaryInUsd">
+            <summary></summary>
+        </member>
+        <member name="P:HSE.Salaries.Employee.Residence">
+            <summary></summary>
+        </member>
+        <member name="P:HSE.Salaries.Employee.RemoteRatio">
+            <summary></summary>
+        </member>
+        <member name="P:HSE.Salaries.Employee.CompanyLocation">
+            <summary></summary>
+        </member>
+        <member name="P:HSE.Salaries.Employee.CompanySize">
+            <summary></summary>
+        </member>
+        <member name="M:HSE.Salaries.Employee.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="M:HSE.Salaries.Employee.ToString(System.String)">
+            <summary>
+            Преобразование в строку с использованием разделителя для атрибутов
+            </summary>
+            <param name="delimeter"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HSE.Salaries.EmploymentType">
+            <summary>
+            Тип занятости
+            </summary>
+        </member>
+        <member name="F:HSE.Salaries.EmploymentType.PT">
+            <summary>
+            Частичная
+            </summary>
+        </member>
+        <member name="F:HSE.Salaries.EmploymentType.FT">
+            <summary>
+            Полная
+            </summary>
+        </member>
+        <member name="F:HSE.Salaries.EmploymentType.CT">
+            <summary>
+            Контракт
+            </summary>
+        </member>
+        <member name="F:HSE.Salaries.EmploymentType.FL">
+            <summary>
+            Фриланс
+            </summary>
+        </member>
+        <member name="T:HSE.Salaries.ExperienceLevel">
+            <summary>
+            Уровень опыта
+            </summary>
+        </member>
+        <member name="F:HSE.Salaries.ExperienceLevel.EN">
+            <summary>
+            Начальный
+            </summary>
+        </member>
+        <member name="F:HSE.Salaries.ExperienceLevel.MI">
+            <summary>
+            Средний
+            </summary>
+        </member>
+        <member name="F:HSE.Salaries.ExperienceLevel.SE">
+            <summary>
+            Senior
+            </summary>
+        </member>
+        <member name="F:HSE.Salaries.ExperienceLevel.EX">
+            <summary>
+            Эксперт
+            </summary>
+        </member>
+        <member name="T:HSE.Salaries.MenuItem">
+            <summary>
+            Элемент меню приложения
+            </summary>
+            <param name="Input">Команда вызова</param>
+            <param name="Description">Описание</param>
+            <param name="Action">Действие</param>
+        </member>
+        <member name="M:HSE.Salaries.MenuItem.#ctor(System.String,System.String,System.Action)">
+            <summary>
+            Элемент меню приложения
+            </summary>
+            <param name="Input">Команда вызова</param>
+            <param name="Description">Описание</param>
+            <param name="Action">Действие</param>
+        </member>
+        <member name="P:HSE.Salaries.MenuItem.Input">
+            <summary>Команда вызова</summary>
+        </member>
+        <member name="P:HSE.Salaries.MenuItem.Description">
+            <summary>Описание</summary>
+        </member>
+        <member name="P:HSE.Salaries.MenuItem.Action">
+            <summary>Действие</summary>
+        </member>
+        <member name="F:HSE.Salaries.Program.Menu">
+            <summary>
+            Меню приложения
+            </summary>
+        </member>
+        <member name="M:HSE.Salaries.Program.ShowMenu">
+            <summary>
+            Вывод меню приложения
+            </summary>
+        </member>
+        <member name="M:HSE.Salaries.Program.ProcessMenu">
+            <summary>
+            Обработка выбранного пользователем элемента меню приложения
+            </summary>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:HSE.Salaries.Program.LoadFile">
+            <summary>
+            Загрузка файла
+            </summary>
+        </member>
+        <member name="M:HSE.Salaries.Program.ShowUnitedStatesEmployees">
+            <summary>
+            Выборка сотрудников из США
+            </summary>
+        </member>
+        <member name="M:HSE.Salaries.Program.ShowListSortedByResidentCountryAndSalaryInUsd">
+            <summary>
+            Выборка отсортированного по стране резидентства и зарплате списка
+            </summary>
+        </member>
+        <member name="M:HSE.Salaries.Program.ShowNotFullTimeEmployees">
+            <summary>
+            Выборка сотрудников не на полной занятости
+            </summary>
+        </member>
+        <member name="M:HSE.Salaries.Program.ShowEmployeeDataCount">
+            <summary>
+            Вывод числа строк в файле с данными о зарплатах
+            </summary>
+        </member>
+        <member name="M:HSE.Salaries.Program.ShowEmployeeDataCountByResidence">
+            <summary>
+            Выборка числа сотрудников по стране резидентства
+            </summary>
+        </member>
+        <member name="M:HSE.Salaries.Program.ShowDataEngineerCountByResidence">
+            <summary>
+            Выборка дата-инженеров по стране резидентства
+            </summary>
+        </member>
+        <member name="M:HSE.Salaries.Program.ShowUsEmployeeNotWorkingInUsCount">
+            <summary>
+            Выборка работников, проживающих в США, которые работают не на компанию из США
+            </summary>
+        </member>
+        <member name="M:HSE.Salaries.Program.AssertEmployees">
+            <summary>
+            Контроль, что данные по зарплатам загружены
+            </summary>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="T:HSE.Salaries.RemoteRatio">
+            <summary>
+            Процент удаленной работы
+            </summary>
+        </member>
+        <member name="F:HSE.Salaries.RemoteRatio.NR">
+            <summary>
+            Нет удаленной работы
+            </summary>
+        </member>
+        <member name="F:HSE.Salaries.RemoteRatio.PR">
+            <summary>
+            Частично удаленная
+            </summary>
+        </member>
+        <member name="F:HSE.Salaries.RemoteRatio.FR">
+            <summary>
+            Полностью удаленная
+            </summary>
+        </member>
+    </members>
+</doc>

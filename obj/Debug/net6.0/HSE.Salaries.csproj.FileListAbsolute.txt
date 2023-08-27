@@ -1,0 +1,16 @@
+C:\Users\maxim\RiderProjects\Sr\HSE.Salaries\bin\Debug\net6.0\HSE.Salaries.exe
+C:\Users\maxim\RiderProjects\Sr\HSE.Salaries\bin\Debug\net6.0\HSE.Salaries.deps.json
+C:\Users\maxim\RiderProjects\Sr\HSE.Salaries\bin\Debug\net6.0\HSE.Salaries.runtimeconfig.json
+C:\Users\maxim\RiderProjects\Sr\HSE.Salaries\bin\Debug\net6.0\HSE.Salaries.dll
+C:\Users\maxim\RiderProjects\Sr\HSE.Salaries\bin\Debug\net6.0\HSE.Salaries.pdb
+C:\Users\maxim\RiderProjects\Sr\HSE.Salaries\bin\Debug\net6.0\HSE.Salaries.xml
+C:\Users\maxim\RiderProjects\Sr\HSE.Salaries\obj\Debug\net6.0\HSE.Salaries.csproj.AssemblyReference.cache
+C:\Users\maxim\RiderProjects\Sr\HSE.Salaries\obj\Debug\net6.0\HSE.Salaries.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maxim\RiderProjects\Sr\HSE.Salaries\obj\Debug\net6.0\HSE.Salaries.AssemblyInfoInputs.cache
+C:\Users\maxim\RiderProjects\Sr\HSE.Salaries\obj\Debug\net6.0\HSE.Salaries.AssemblyInfo.cs
+C:\Users\maxim\RiderProjects\Sr\HSE.Salaries\obj\Debug\net6.0\HSE.Salaries.csproj.CoreCompileInputs.cache
+C:\Users\maxim\RiderProjects\Sr\HSE.Salaries\obj\Debug\net6.0\HSE.Salaries.dll
+C:\Users\maxim\RiderProjects\Sr\HSE.Salaries\obj\Debug\net6.0\refint\HSE.Salaries.dll
+C:\Users\maxim\RiderProjects\Sr\HSE.Salaries\obj\Debug\net6.0\HSE.Salaries.pdb
+C:\Users\maxim\RiderProjects\Sr\HSE.Salaries\obj\Debug\net6.0\HSE.Salaries.genruntimeconfig.cache
+C:\Users\maxim\RiderProjects\Sr\HSE.Salaries\obj\Debug\net6.0\ref\HSE.Salaries.dll
